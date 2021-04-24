@@ -51,7 +51,9 @@
 		}
 
         .header-td,
-        .category-td {
+        .category-td,
+        .how-use-td,
+        .contact-td {
             border-bottom: 2px solid #FF6C00;
         }
 
@@ -102,57 +104,67 @@
             background-color: #ff9346;
         }
 
-/*
-        .main-menu-td,
-        .header-td,
-        .how-use-td-td, 
-        .contact-td {
-            border-bottom: 1px solid grey
+        @media (max-width: 620px) 
+        {
+            .table-600
+            {
+                width: 500px !important; 
+            } 
+
+            .logo {
+                padding-left: 10px !important;
+            }
+            
+            .logo img {
+                height: 60px !important; 
+                width: 80px !important;
+            }
+
+            .phones {
+                padding-left: 10px !important;
+                padding-right: 5px !important;
+            }
+
+            .table-400 {
+                width: 390px;
+            }
+
+            .contact-block-1 {
+                padding-right: 8px !important;
+            }
+
+            .contact-block-2 {
+                padding-right: 0px !important;
+            }
+
+            .content-td {
+                background-size: cover !important;
+                height: 330px !important;
+            }
+
+            .table-500 {
+                width: 480px !important;
+            }
+
+            .table-155 {
+                width: 140px !important;
+            }
+
+            .button {
+                padding-top: 7px !important;
+                padding-right: 13px !important;
+                padding-bottom: 7px !important;
+                padding-left: 13px !important;
+            }
+
+            .table-148 {
+                width: 135px !important;
+            }
+
+            .table-200 {
+                width: 170px !important;
+            }
         }
-
-
-        .main-menu-td {
-            padding-top: 20px; 
-            padding-bottom: 20px;
-        }
-
-        .main-menu-td a {
-            text-decoration: none;
-            color: black;
-            padding-top: 5px;
-            padding-right: 10px;
-            padding-bottom: 5px;
-            padding-left: 10px;
-        }
-
-        .light-box__table .button{
-            margin-bottom: 40px;
-        }
-
-        .light-box__button {
-            background-color: #ff7e3b;
-        }
-
-        .instructions-td p,
-        .contact-td p {
-            color: #9e9e9e;
-            text-align: left;
-        }
-
-        .footer-menu-td img {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .footer-menu-td p {
-            margin-top: 10px;
-            padding-top: 4px;
-            padding-bottom: 4px;
-            border-right: 1px solid #9e9e9e;
-        }
-
-        */
-
 	</style>
 </head>
 
@@ -163,9 +175,9 @@
             <td>
                 <table class="letter table-600" cellpadding="0" cellspacing="0" width="600" align="center">
                     <tr>
-                        <td class="table-600"  height="30" width="600"></td>
+                        <td class="table-600"  height="20" width="600"></td>
                     </tr>
-                    <tr>
+                    <tr class="header">
                         <td class="header-td" bgcolor="#ffffff">
                             <table class="header table-600" cellpadding="0" cellspacing="0" width="600" align="center">
                                 <tr>
@@ -180,10 +192,10 @@
                                     <td class="phones" align="right" style="padding-left: 26px; padding-right: 40px;"> 
                                         <table class="table-400" cellpadding="0" cellspacing="0" width="400">
                                             <tr>
-                                                <td style="padding-right: 24px;">
+                                                <td class="contact-block contact-block-1" style="padding-right: 24px;">
                                                     <table class="header__contact" cellpadding="0" cellspacing="0">
                                                         <tr>
-                                                            <td class="contact-adress" style="font-family: 'Montserrat'; font-weight: 700; font-size: 11px; line-height: 120%;">Уручская 19 пав. 3М</td>
+                                                            <td class="contact-adress" style="font-family: 'Montserrat'; font-weight: 700; font-size: 11px; line-height: 120%; width: 118px;">Уручская 19 пав. 3М</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="contact-phone" style="font-family: 'Montserrat'; font-weight: 700; font-size: 11px; line-height: 120%; padding-bottom: 3px;">+375(29)6-921-921</td>
@@ -193,10 +205,10 @@
                                                         </tr>
                                                     </table>
                                                 </td>
-                                                <td style="padding-right: 24px;">
+                                                <td class="contact-block contact-block-2">
                                                     <table class="header__contact" cellpadding="0" cellspacing="0">
                                                         <tr>
-                                                            <td class="contact-adress" style="font-family: 'Montserrat'; font-weight: 700; font-size: 11px; line-height: 120%;">пр. Дзержинского 22</td>
+                                                            <td class="contact-adress" style="font-family: 'Montserrat'; font-weight: 700; font-size: 11px; line-height: 120%; width: 150px;">пр. Дзержинского 22</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="contact-phone" style="font-family: 'Montserrat'; font-weight: 700; font-size: 11px; line-height: 120%; padding-bottom: 3px;">+375(29)652-60-60</td>
@@ -207,9 +219,9 @@
                                                     </table>
                                                 </td>
                                                 <td>
-                                                    <table class="header__contact" cellpadding="0" cellspacing="0">
+                                                    <table class="header__contact contact-block-3" cellpadding="0" cellspacing="0">
                                                         <tr>
-                                                            <td class="contact-adress" style="font-family: 'Montserrat'; font-weight: 700; font-size: 11px; line-height: 120%;">ТЦ - Grad, пав. 201</td>
+                                                            <td class="contact-adress" style="font-family: 'Montserrat'; font-weight: 700; font-size: 11px; line-height: 120%; width: 106px;">ТЦ - Grad, пав. 201</td>
                                                         </tr>
                                                         <tr>
                                                             <td class="contact-phone" style="font-family: 'Montserrat'; font-weight: 700; font-size: 11px; line-height: 120%; padding-bottom: 3px;">+375(29)199-80-30</td>
@@ -229,8 +241,8 @@
                             </table>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="content-td" bgcolor="#ffffff" width="600" height="381" style="background-image: url(/img/background-main.png)">          
+                    <tr class="content">
+                        <td class="content-td table-600" bgcolor="#ffffff" width="600" height="381" style="background-image: url(/img/background-main.png)">          
                             <table class="table-600" cellpadding="0" cellspacing="0" width="600" style="margin-bottom: 6px;">
                                 <tr>
                                     <td>
@@ -239,7 +251,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 16px; line-height: 130%; text-align: left; padding-left: 40px; padding-bottom: 20px;">
+                                        <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 16px; line-height: 130%; text-align: left; padding-left: 40px; padding-bottom: 21px;">
                                             <span style="color: #FF6C00">
                                                 Дарим скидку 10%
                                             </span>
@@ -259,7 +271,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p style="font-family: 'Montserrat'; font-size: 12px; line-height: 130%; color: #5B5E67; text-align: left; padding-left: 40px; padding-bottom: 20px;">Промокод действует в течение 10 дней.</p>
+                                        <p style="font-family: 'Montserrat'; font-size: 12px; line-height: 130%; color: #5B5E67; text-align: left; padding-left: 40px; padding-bottom: 21px;">Промокод действует в течение 10 дней.</p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -270,7 +282,7 @@
                             </table>
                         </td>    
                     </tr> 
-                    <tr>
+                    <tr class="category">
                         <td class="category-td" bgcolor="#ffffff">
                             <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
                                 <tr>
@@ -284,51 +296,51 @@
                                 </tr>
                                 <tr>
                                     <td class="light-box">
-                                        <table class="light-box__table table-500" cellpadding="0" cellspacing="0" width="510" align="center">
-                                            <tr>
-                                                <td align="left" style="display: inline-block; width: 155px; height: 224px;">
+                                        <table class="light-box__table table-500" cellpadding="0" cellspacing="0" width="520" align="center">
+                                            <tr align="center">
+                                                <td  class="table-155" style="display: inline-block; width: 155px; height: 224px;"> 
                                                     <img src="/img/icon/spotlight-logo.png"  style="margin: 0 auto; width: 79px; height: 79px;"  alt="Точечный светильника" />
-                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; height: 36px; margin-top: 17px; margin-bottom: 18px;">
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; height: 36px; margin-top: 17px; margin-bottom: 18px;">
                                                         Точечные<br/>светильники
                                                     </p>
-                                                    <a class="button" href="#">Смотреть все</a>
+                                                    <a class="button" href="https://www.electrodom.by/catalog/tochechnye-svetilniki/">Смотреть все</a>
                                                 </td>
-                                                <td align="center" width="155" style="display: inline-block; width: 155px; height: 224px; margin: 0 22.5px 0px;">
+                                                <td class="table-155" style="display: inline-block; width: 155px; height: 224px; padding: 0 23.5px 0px;">
                                                     <img src="/img/icon/sconce-logo.png" style="margin: 3px auto 0; width: 90px; height: 72px;" alt="Бра" />
-                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; height: 36px; width: 155; margin-top: 21px; margin-bottom: 18px;">
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; height: 36px; width: 155; margin-top: 21px; margin-bottom: 18px;">
                                                         Бра
                                                     </p>
-                                                    <a class="button" href="#">Смотреть все</a>
+                                                    <a class="button" href="https://www.electrodom.by/catalog/bra/">Смотреть все</a>
                                                 </td>
-                                                <td align="right" style="display: inline-block; width: 155px; height: 224px;">
+                                                <td class="table-155" style="display: inline-block; width: 155px; height: 224px;">
                                                     <img src="/img/icon/Chandelier-logo.png" style="margin: 0 auto; width: 90px; height: 75px;" alt="Люстры" />
-                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; height: 36px; width: 155; margin-top: 21px; margin-bottom: 17px;">
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; height: 36px; width: 155; margin-top: 21px; margin-bottom: 18px;">
                                                         Люстры
                                                     </p>
-                                                    <a class="button" href="#">Смотреть все</a>
+                                                    <a class="button" href="https://www.electrodom.by/catalog/lyustry/">Смотреть все</a>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td align="left" style="display: inline-block; width: 155px; height: 225px;">
+                                            <tr align="center">
+                                                <td class="table-155" style="display: inline-block; width: 155px; height: 225px;">
                                                     <img src="/img/icon/TablLeamp-logo.png" style="margin: 0 auto; width: 69px; height: 75px;" alt="Настольные лампы" />
-                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; height: 36px; width: 155; margin-top: 21px; margin-bottom: 17px;">
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; height: 36px; width: 155; margin-top: 21px; margin-bottom: 17px;">
                                                         Настольные<br/>лампы
                                                     </p>
-                                                    <a class="button" href="#">Смотреть все</a>
+                                                    <a class="button" href="https://www.electrodom.by/catalog/nastolnye-lampy/">Смотреть все</a>
                                                 </td>
-                                                <td align="center" width="155" style="display: inline-block; width: 155px; height: 225px; margin: 0 22.5px; ">
+                                                <td class="table-155" style="display: inline-block; width: 155px; height: 225px; padding: 0 23.5px; ">
                                                     <img src="/img/icon/FloorLamp-logo.png" style="margin: 0 auto; width: 35px; height: 75px;"  alt="Торшеры" />
-                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; height: 36px; width: 155; margin-top: 21px; margin-bottom: 18px;">
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; height: 36px; width: 155; margin-top: 21px; margin-bottom: 17px;">
                                                         Торшеры
                                                     </p>
-                                                    <a class="button" href="#">Смотреть все</a>
+                                                    <a class="button" href="https://www.electrodom.by/catalog/torshery/">Смотреть все</a>
                                                 </td>
-                                                <td align="right" width="155" style="display: inline-block; width: 155px; height: 225px;">
+                                                <td class="table-155" style="display: inline-block; width: 155px; height: 225px;">
                                                     <img src="/img/icon/magneticSystems-logo.png" style="margin: 0 auto; width: 56px; height: 75px;" alt="Магнитные системы" />
-                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; text-align: center; height: 36px; width: 155; margin-top: 21px; margin-bottom: 18px;">
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 18px; line-height: 100%; height: 36px; width: 155; margin-top: 21px; margin-bottom: 17px;">
                                                         Магнитные<br/>системы
                                                     </p>
-                                                    <a class="button" href="#">Смотреть все</a>
+                                                    <a class="button" href="https://www.electrodom.by/catalog/torshery/">Смотреть все</a>
                                                 </td>
                                             </tr>
                                         </table>
@@ -337,169 +349,130 @@
                             </table>
                         </td>
                     </tr>      
-                    <tr>
+                    <tr class="how-use">
                         <td class="how-use-td" bgcolor="#ffffff">
                             <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
                                 <tr>
-                                    <td height="20" width="600"></td>
+                                    <td class="table-600" height="32" width="600"></td>
                                 </tr>
                                 <tr>
-                                    <td><h2>Как воспользоваться промокодом?</h2></td>
+                                    <td><h2 style="font-family: 'Montserrat'; font-weight: 600; font-size: 40px; line-height: 100%; text-align: center; padding: 0; margin: 0;">Как воспользоваться<br/>промокодом?</h2></td>
+                                </tr>
+                                <tr>
+                                    <td class="table-600" height="29" width="600"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                                        <table class="table-500" cellpadding="0" cellspacing="0" width="520" align="center">
                                             <tr>
-                                                <td align="center">
-                                                    <img style="margin-bottom: 20px;" src="https://source.unsplash.com/random/170x110" alt="Изображение корзины" />
-                                                    <p>Положите товар<br/>в корзину на сумму<br/>более 15 000 рублей</p>
+                                                <td align="left" class="table-148" style="display: inline-block; width: 148px; height: 164px;">
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 40px; line-height: 100%; text-align: center; padding-bottom: 12px;">1</p>
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 12px; line-height: 100%; text-align: center; height: 36px; padding-bottom: 18px;">
+                                                        Добавьте товар<br/>в корзину.
+                                                    </p>
+                                                    <img src="/img/how_use-1.png" alt="Изображение кнопки корзины" />
                                                 </td>
-                                                <td align="center">
-                                                    <img style="margin-bottom: 20px;" src="https://source.unsplash.com/random/200x110" alt="Изображение поля ввода" />
-                                                    <p>Перейдите в корзину и в поле<br/>"У меня есть промокод"<br/>укажите код из письма</p>
+                                                <td align="center" class="table-200" style="display: inline-block; width: 200px; height: 164px; margin: 0 12px 0;">
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 40px; line-height: 100%; text-align: center; padding-bottom: 12px;">2</p>
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 12px; line-height: 100%; text-align: center; height: 36px; padding-bottom: 18px;">
+                                                        Перейдите в корзину<br/>и в поле “Применить купон”<br/>укажите код из письма
+                                                    </p>
+                                                    <img src="/img/how_use-2.png" alt="Изображение поля ввода" />
                                                 </td>
-                                                <td align="center">
-                                                    <img  style="margin-bottom: 20px;" src="https://source.unsplash.com/random/170x110" alt="Изображение кнопки" />
-                                                    <p>Нажмите "Применить"<br/>и убедитесь, что скидка<br/>рассчиталась</p>
+                                                <td align="right" class="table-148" style="display: inline-block; width: 148px; height: 164px;">
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 40px; line-height: 100%; text-align: center; padding-bottom: 12px;">3</p>
+                                                    <p style="font-family: 'Montserrat'; font-weight: 600; font-size: 12px; line-height: 100%; text-align: center; height: 36px; padding-bottom: 18px;">
+                                                        Нажмите “Далее”
+                                                    </p>
+                                                    <img  src="/img/how_use-3.png" alt="Изображение кнопки" />
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>                       
                                 <tr>
-                                    <td height="60"></td>
+                                    <td class="table-600" height="40" width="600"></td>
                                 </tr>
                             </table>
                         </td>
                     </tr>   
-                    <tr>
-                        <td class="instructions-td" bgcolor="#ffffff">
-                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
-                                <tr>
-                                    <td width="12" style="display: block; margin-bottom: auto;"><p>*</p></td>
-                                    <td><p style="margin-bottom: 20px;">Промокод не суммируеться с другими купонами, промокодами, распродажами,<br/>акциями и скидками дисконтной карты.</p></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td><p style="margin-bottom: 20px;">Бренды, не участвующие в распродаже: Raccagni Angelo, Citilux, Arle Lamp, Divinare, Crystal Lux,<br/>Eurosvet, Werkel, Electrostandard, Borgates, TK Llghting.</p></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>
-                                        <a style="color: #9e9e9e;" href="#">Ознакомьтесь с полной информацией по акции и правилами применения промокода</a><br/>
-                                        <a style="color: #9e9e9e;" href="#">Условия доставки</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="20"></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
+                    <tr class="contact">
                         <td class="contact-td" bgcolor="#ffffff">
                             <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
                                 <tr>
-                                    <td height="20"></td>
+                                    <td height="39"></td>
                                 </tr>
                                 <tr>
-                                    <td><p>Следите за актуальными новостями и акциями<br/>в удобной дял Вас формате!</p></td>
-                                    <td>
-                                        <table class="table-300" cellpadding="0" cellspacing="0" width="300" align="center">
-                                            <tr>
-                                                <td><a href="#"><img src="https://source.unsplash.com/random/40x40" alt="Лолотип Вконтакте"/></a></td>
-                                                <td><a href="#"><img src="https://source.unsplash.com/random/40x40" alt="Лолотип Facebook"/></a></td>
-                                                <td><a href="#"><img src="https://source.unsplash.com/random/40x40" alt="Лолотип Однокластики"/></a></td>
-                                                <td><a href="#"><img src="https://source.unsplash.com/random/40x40" alt="Лолотип YouTube"/></a></td>
-                                                <td><a href="#"><img src="https://source.unsplash.com/random/40x40" alt="Лолотип Instagram"/></a></td>
-                                            </tr>
-                                        </table>
-                                    </td>
+                                    <td align="center"><a href="https://www.instagram.com/electrodom.by/"><img src="/img/icon/instagram.png" alt="Лолотип Инстаграм"/></a></td>
                                 </tr>
                                 <tr>
-                                    <td height="20"></td>
+                                    <td height="18"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><p style="font-family: 'Montserrat'; font-size: 10px; line-height: 100%; text-align: center; color: #5B5E67;">Следите за актуальными новостями и акциями в удобном для Вас формате!</p></td>
+                                </tr>
+                                <tr>
+                                    <td height="40"></td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="footer-menu-td" bgcolor="#ffffff">
-                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                    <tr class="instructions">
+                        <td class="instructions-td" bgcolor="#ffffff">
+                            <table class="table-500" cellpadding="0" cellspacing="0" width="520" align="center">
                                 <tr>
-                                    <td height="30" wigth="600"></td>
-                                </tr>  
+                                    <td height="39"></td>
+                                </tr>
                                 <tr>
+                                    <td style="display: block; width: 5px; font-family: 'Montserrat'; font-size: 10px; line-height: 100%; color: #5B5E67;"><p>*</p></td>
                                     <td>
-                                        <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
-                                            <tr>
-                                                <td align="center">
-                                                    <a href="#" style="text-decoration: none; color: black;">
-                                                        <img  src="https://source.unsplash.com/random/60x80" alt="Иконка торшера"/>
-                                                        <p>Торшеры</p>
-                                                    </a>
-                                                </td>
-                                                <td align="center">
-                                                    <a href="#" style="text-decoration: none; color: black;">
-                                                        <img src="https://source.unsplash.com/random/60x80" alt="Иконка люстры"/>
-                                                        <p>Люстры</p>
-                                                    </a>
-                                                </td>
-                                                <td align="center">
-                                                    <a href="#" style="text-decoration: none; color: black;">
-                                                        <img src="https://source.unsplash.com/random/60x80" alt="Иконка стетильника"/>
-                                                        <p>Светильники</p>
-                                                    </a>
-                                                </td>
-                                                <td align="center">
-                                                    <a href="#" style="text-decoration: none; color: black;">
-                                                        <img src="https://source.unsplash.com/random/60x80" alt="Иконка настольной лампы"/>
-                                                        <p>Настольная лампы</p>
-                                                    </a>
-                                                </td>
-                                                <td align="center">
-                                                    <a href="#" style="text-decoration: none; color: black;">
-                                                        <img src="https://source.unsplash.com/random/60x80" alt="Иконка Бра"/>
-                                                        <p>Бра</p>
-                                                    </a>
-                                                </td>
-                                                <td align="center">
-                                                    <a href="#" style="text-decoration: none; color: black;">
-                                                        <img src="https://source.unsplash.com/random/60x80" alt="Иконка распродажи"/>
-                                                        <p style="border: none; color:#ff7e3b">Распродажа</p>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </table>
+                                        <p style="text-align: left; font-family: 'Montserrat'; font-size: 10px; line-height: 100%; padding-bottom: 7px; color: #5B5E67; margin-left: 5px;">
+                                            Промокод не суммируется с другими купонами, промокодами, распродажами, акциями <br/>и скидками дисконтной карты.
+                                        </p>
+                                        <p style="text-align: left; font-family: 'Montserrat'; font-size: 10px; line-height: 100%; padding-bottom: 7px; color: #5B5E67; margin-left: 5px;">
+                                            Бренды, не участвующие в распродаже: loftconcept.
+                                        </p>
+                                        <p style="text-align: left; font-family: 'Montserrat'; font-size: 10px; line-height: 100%; color: #5B5E67; margin-left: 5px;">
+                                            Ознакомьтесь с полной информацией по акции и правил промокода.
+                                            <a href="https://www.electrodom.by/about/delivery/" style="color: #5B5E67;">Условия доставки</a>.
+                                        </p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td height="30" wigth="850"></td>
-                                </tr>  
+                                    <td height="39"></td>
+                                </tr>
                             </table>
                         </td>
-                    </tr> 
-                    <tr>
-                        <td class="footer-td" bgcolor="#cccccc">
-                            <table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
+                    </tr>
+                    <tr class="footer">
+                        <td class="footer-td" bgcolor="#F3F3F3">
+                            <table class="table-500" cellpadding="0" cellspacing="0" width="520" align="center">
                                 <tr>
-                                    <td height="40"></td>
+                                    <td height="38"></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p style="margin-bottom: 30px; с">Вы получили письмо, отому что выразили свое желание получать информационные<br/>
-                                        рассылки на сайте <a href="#" style="text-decoration: none; color: #89ae4d;">vamsvet.ru</a>. Данное письмо сгенерировано автоматически.<br/>
-                                        Отвечать на него не нужно</p>
-                                        <p>При возникновении вопросов, пожалуйста, <a href="#" style="color:#9e9e9e">обратитесь в службу поддержки</a>.</p>
+                                        <p style="text-align: left; font-family: 'Montserrat'; font-size: 10px; line-height: 100%; color: #5B5E67; padding-bottom: 17px;">
+                                            Вы получили данное письмо, потому что выразили свое желание получать информационные<br/>
+                                            рассылки на сайте <a href="https://www.electrodom.by/" style=" color: #FF6C00;">www.electrodom.by</a>. Данное письмо сгенерировано автоматически.<br/>
+                                            Отвечать на него не нужно.
+                                        </p>
+                                        <p style="text-align: left; font-family: 'Montserrat'; font-size: 10px; line-height: 100%; color: #5B5E67;">
+                                            При возникновении вопросов, пожалуйста 
+                                            <a href="tel:+375296921921" style="color: #FF6C00;">
+                                                обратитесь по номеру телефона +375(29)6-921-921
+                                            </a>
+                                        </p>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td height="10"></td>
+                                    <td height="40"></td>
                                 </tr>
                             </table>
                         </td>
                     </tr>  
                     <tr>
-                        <td height="30" wigth="650"></td>
+                        <td class="table-600" height="20" wigth="600"></td>
                     </tr>       
                 </table>
             </td>
